@@ -1,0 +1,78 @@
+<!doctype html>
+
+
+<section class="card">
+<div class="grid">
+
+
+<!-- Left: Current + Hourly -->
+<div>
+<div class="current">
+<div class="weather-icon" id="weatherIcon" aria-hidden="true">
+<img id="iconImg" src="" alt="" style="width:76px;height:76px;display:none" />
+<!-- fallback SVG shown when no API icon available -->
+<svg id="fallbackIcon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="32" cy="32" r="12" fill="url(#g)" />
+<g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+<path d="M32 6v6" />
+<path d="M32 52v6" />
+<path d="M6 32h6" />
+<path d="M52 32h6" />
+</g>
+<defs>
+<linearGradient id="g" x1="0" x2="1">
+<stop offset="0" stop-color="#FFD86B" />
+<stop offset="1" stop-color="#FFB86B" />
+</linearGradient>
+</defs>
+</svg>
+</div>
+
+
+<div class="meta">
+<h2 id="city">Chennai</h2>
+<div class="time" id="time">Fri, 9:30 AM • Partly Cloudy</div>
+<div class="temp">
+<div class="value" id="tempVal">32</div>
+<div class="unit" id="toggleUnit">°C</div>
+</div>
+<div class="desc" id="desc">Humid · Light breeze</div>
+</div>
+</div>
+
+
+<div class="hourly" id="hourly">
+<!-- Hourly cards will be injected here -->
+</div>
+
+
+</div>
+
+
+<!-- Right: Details -->
+<aside class="details">
+<div class="detail-row"><div class="small">Feels like</div><div class="small" id="feels">34°</div></div>
+<div class="detail-row"><div class="small">Humidity</div><div class="small" id="hum">78%</div></div>
+<div class="detail-row"><div class="small">Wind</div><div class="small" id="wind">10 km/h</div></div>
+<div class="detail-row"><div class="small">Pressure</div><div class="small" id="pressure">1008 hPa</div></div>
+
+
+<div class="extras">
+<div class="extra"><div class="label">UV Index</div><div class="val" id="uv">5</div></div>
+<div class="extra"><div class="label">Visibility</div><div class="val" id="vis">10 km</div></div>
+<div class="extra"><div class="label">Sunrise</div><div class="val" id="sunrise">6:02 AM</div></div>
+</div>
+
+
+<div class="note">This UI uses demo data until you add an API key. See README for API integration steps.</div>
+</aside>
+
+
+</div>
+</section>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
